@@ -1,0 +1,156 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue",
+		"^lyt-(.*)": "@/pages/tabbar/lyt-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// {
+		// 	"path": "pages/log/log",
+		// 	"style": {
+		// 		"navigationBarTitleText": ""
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/log/Register",
+		// 	"style": {
+		// 		"navigationBarTitleText": "注册"
+		// 	}
+		// },
+		{ //首页
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首页"
+				// "navigationStyle": "custom",
+				// "app-plus": {
+				// 	"titleView": false
+				// }
+			}
+		},
+		{
+			"path": "pages/team/team",
+			"style": {
+				"navigationBarTitleText": "我的团队"
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/team/examine_member",
+			"style": {
+				"navigationBarTitleText": "折扣管理"
+			}
+		},
+		{
+			"path": "pages/mine/discount",
+			"style": {
+				"navigationBarTitleText": "我的折扣"
+			}
+		},
+		{
+			"path": "pages/mine/integral",
+			"style": {
+				"navigationBarTitleText": "积分订单"
+			}
+		},
+		{
+			"path": "pages/mine/message",
+			"style": {
+				"navigationBarTitleText": "我的信息"
+			}
+		},
+		{
+			"path": "pages/mine/chage_msg",
+			"style": {
+				"navigationBarTitleText": "资料变更"
+			}
+		},
+		{
+			"path": "pages/mine/invite",
+			"style": {
+				"navigationBarTitleText": "我的邀请"
+			}
+		},
+		{
+			"path": "pages/mine/wallet",
+			"style": {
+				"navigationBarTitleText": "我的钱包"
+			}
+		},
+		{
+			"path": "pages/mine/Withdraw",
+			"style": {
+				"navigationBarTitleText": "余额提现"
+			}
+		},
+		{
+			"path": "pages/mine/Check",
+			"style": {
+				"navigationBarTitleText": "我的账单"
+			}
+		},
+		{
+			"path": "pages/mine/Record",
+			"style": {
+				"navigationBarTitleText": "提现记录"
+			}
+		},
+		{
+			"path": "pages/log/agreement",
+			"style": {
+				"navigationBarTitleText": "协议"
+			}
+		},
+		{
+			"path": "pages/team/addMember",
+			"style": {
+				"navigationBarTitleText": "添加成员"
+			}
+		},
+		{
+			"path": "pages/home/Score",
+			"style": {
+				"navigationBarTitleText": "积分查询"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "ScrollMall",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#000000",
+		"selectedColor": "#1baeae",
+		"backgroundColor": "#FFFFFF",
+		"fontSize": "10px",
+		"height": "60px",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"text": "首页",
+				"iconPath": "static/home_nor.png",
+				"selectedIconPath": "static/home_nor.png",
+				"role": ["guest", "user", "admin", "ling"] // 所有角色都可见
+			},
+			{
+				"pagePath": "pages/team/team",
+				"text": "团队",
+				"iconPath": "static/team_nor.png",
+				"selectedIconPath": "static/team_nor.png",
+				"role": ["user", "admin", "ling"]
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"text": "我的",
+				"iconPath": "static/mine_nor.png",
+				"selectedIconPath": "static/mine_nor.png",
+				"role": ["ling"]
+			}
+		]
+	},
+	"uniIdRouter": {}
+}
